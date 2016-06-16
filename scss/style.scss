@@ -12,18 +12,28 @@ body {
   font-family: Roboto;
 }
 
+%display {
+	display: inline-block;
+}
+%color {
+	color: #242b36;
+}
+%width {
+	width: calc(100% - 40px);
+  transition: .3s;
+}
+
 input[name="tabs"] {
   display: none;
   @for $i from 1 through $tabs {
     &#tab-#{$i}:checked {
       ~ .content .tab:nth-of-type(#{$i}) {
-        display: inline-block;
+        @extend %display;
       }
       ~ .tabs label:nth-child(#{$i}) {
-        color: #242b36;
+        @extend %color;
         &:after {
-          width: calc(100% - 40px);
-          transition: .3s;
+          @extend %width;
         }
       }
     }
