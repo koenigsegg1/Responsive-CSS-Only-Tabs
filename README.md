@@ -1,5 +1,5 @@
-# hello-world
+# Responsive CSS-Only Tabs
 
-Hi, humans.
+Ever needed tabbed content without using jQuery? And something that looks great too? I've got you covered!
 
-Kyle speaking, Whats up?
+![](https://pbs.twimg.com/media/Ck9PctaXIAAGIxH.jpg:large)
